@@ -1,4 +1,4 @@
-# Limit the maximum number of methods per class
+# Limit the number of methods per class
 
 Limit the number of methods in a class to enforce splitting up large classes into smaller ones.
 

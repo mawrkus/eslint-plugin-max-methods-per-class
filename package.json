@@ -1,9 +1,24 @@
 {
   "name": "eslint-plugin-max-methods-per-class",
-  "description": "ESLint rule to limit the maximum number of methods per class",
+  "description": "ESLint rule to limit the number of methods per class",
   "version": "1.0.0",
-  "main": "./rules/max-methods-per-class.js",
+  "main": "index.js",
   "license": "MIT",
+	"files": [
+		"index.js",
+		"rules"
+	],
+	"keywords": [
+		"eslint",
+		"eslintplugin",
+		"eslint-plugin",
+		"eslintrule",
+		"eslint-rule",
+		"max",
+		"maximum",
+		"methods",
+		"class"
+	],
   "scripts": {
     "test": "node ./tests/max-methods-per-class.js"
   },
