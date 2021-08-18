@@ -1,0 +1,15 @@
+{
+  "name": "eslint-plugin-max-lines-per-class",
+  "version": "1.0.0",
+  "main": "max-lines-per-class.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "node ./tests/max-lines-per-class.js"
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}
