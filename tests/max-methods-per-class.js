@@ -1,6 +1,6 @@
 "use strict";
 
-const rule = require("../rules/max-lines-per-class");
+const rule = require("../rules/max-methods-per-class");
 const { RuleTester } = require("eslint");
 
 const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 6 } });
@@ -28,7 +28,7 @@ class Rule4 {
 }
 `;
 
-ruleTester.run("max-lines-per-class", rule, {
+ruleTester.run("max-methods-per-class", rule, {
   valid: [
     {
       code: code1,
