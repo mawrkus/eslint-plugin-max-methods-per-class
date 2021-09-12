@@ -4,15 +4,7 @@
  */
 "use strict";
 
-//------------------------------------------------------------------------------
-// Requirements
-//------------------------------------------------------------------------------
-
-//------------------------------------------------------------------------------
-// Rule Definition
-//------------------------------------------------------------------------------
-
-const DEFAULT_MAX_COUNT = 5;
+const DEFAULT_MAX_COUNT = 6;
 
 module.exports = {
   meta: {
@@ -36,7 +28,7 @@ module.exports = {
     },
   },
   create(context) {
-    const maximumCount = context.options[0] || 1;
+    const maximumCount = context.options[0] || DEFAULT_MAX_COUNT;
 
     let methodsCount = 0;
 

@@ -4,21 +4,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-	"files": [
-		"index.js",
-		"rules"
-	],
-	"keywords": [
-		"eslint",
-		"eslintplugin",
-		"eslint-plugin",
-		"eslintrule",
-		"eslint-rule",
-		"max",
-		"maximum",
-		"methods",
-		"class"
-	],
+  "files": [
+    "rules",
+    "index.js",
+    "README.md"
+  ],
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "eslintrule",
+    "eslint-rule",
+    "max",
+    "maximum",
+    "methods",
+    "class"
+  ],
   "scripts": {
     "test": "node ./tests/max-methods-per-class.js"
   },

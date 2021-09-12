@@ -1,6 +1,12 @@
-# 🍱 An ESLint plugin to detect when a class has too many methods
+# 🍱 An ESLint plugin to enforce a maximum number of methods per class (max-methods-per-class)
 
-Limit the number of methods in a class to enforce splitting up large classes into smaller ones.
+Classes containing a lot of methods:
+
+- might be harder to understand,
+- might be harder to maintain,
+- might indicate that the [single responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) has been violated.
+
+This plugin aims to spot large classes and to enforce splitting them up into smaller ones.
 
 ## Install
 
@@ -8,13 +14,24 @@ Limit the number of methods in a class to enforce splitting up large classes int
 npm install eslint-plugin-max-methods-per-class --save-dev
 ```
 
-or with yarn:
+## Usage
 
-```shell
-yarn add eslint-plugin-max-methods-per-class --dev
+The rule takes one option, a number, which is the maximum number of methods for each class. The default is **6**.
+
+You can set the option in configuration like this:
+
+```json
+{
+  "plugins": ["eslint-plugin-max-methods-per-class"],
+  "rules": {
+    "max-methods-per-class": ["warn", 4]
+  }
+}
 ```
 
-## Fail
+## Examples
+
+### Fail
 
 ```js
 /* eslint max-methods-per-class: ["error", 3] */
@@ -27,7 +44,7 @@ class Listing {
 }
 ```
 
-## Pass
+### Pass
 
 ```js
 /* eslint max-methods-per-class: ["error", 3] */
@@ -37,14 +54,4 @@ class Listing {
   componentDidMount() {}
   render() {}
 }
-```
-
-## Options
-
-The rule takes one option, a number, which is the maximum number of methods for each class. The default is **7 - 2 = 5**.
-
-You can set the option in configuration like this:
-
-```js
-"max-methods-per-class": ["warn", 9]
 ```
