@@ -22,7 +22,7 @@ You can set the option in configuration like this:
 
 ```json
 {
-  "plugins": ["eslint-plugin-max-methods-per-class"],
+  "plugins": ["max-methods-per-class"],
   "rules": {
     "max-methods-per-class": ["warn", 4]
   }
