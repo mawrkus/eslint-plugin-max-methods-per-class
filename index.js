@@ -1,2 +1,7 @@
 const rule = require("./rules/max-methods-per-class");
-module.exports = rule;
+
+module.exports = {
+  rules: {
+    'max-methods-per-class': rule,
+  },
+};
