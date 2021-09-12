@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-max-methods-per-class",
   "description": "ESLint rule to limit the number of methods per class",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
