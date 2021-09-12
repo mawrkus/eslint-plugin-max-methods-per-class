@@ -1,9 +1,16 @@
 {
   "name": "eslint-plugin-max-methods-per-class",
   "description": "ESLint rule to limit the number of methods per class",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "test": "node ./tests/max-methods-per-class.js",
+    "prerelease": "npm run test",
+    "release": "npm version -m \"New version: %s\"",
+    "postrelease": "npm run push && npm publish",
+    "push": "git push origin main && git push origin --tags"
+  },
   "files": [
     "rules",
     "index.js",
@@ -20,9 +27,6 @@
     "methods",
     "class"
   ],
-  "scripts": {
-    "test": "node ./tests/max-methods-per-class.js"
-  },
   "peerDependencies": {
     "eslint": "^7.0.0"
   },
