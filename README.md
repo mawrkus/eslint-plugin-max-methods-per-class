@@ -24,7 +24,7 @@ You can set the option in configuration like this:
 {
   "plugins": ["max-methods-per-class"],
   "rules": {
-    "max-methods-per-class": ["warn", 4]
+    "max-methods-per-class/max-methods-per-class": ["warn", 4]
   }
 }
 ```
